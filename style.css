@@ -1,6 +1,6 @@
-.card-content{
-    border: 2px solid grey;
-    padding: 10px;
-    margin-bottom: 10px;
-  
+body{
+    background-color: blue;
+   
+    background-image: url('123.jpg');
+      
 }
