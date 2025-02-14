@@ -36,3 +36,7 @@ button {
      footer {
         text-align: center;
      }
+
+     a {
+        color: red;
+     }
