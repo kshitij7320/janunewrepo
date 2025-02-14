@@ -1,4 +1,4 @@
-body{
+ body{ 
     background-color: blue;
    
     background-image: url('123.jpg');
@@ -6,6 +6,15 @@ body{
 }
 
 button {
-    color: brown;
-    background-color: blue;
+    color: rgb(255, 0, 0);
+    background-color: #ffff00;
 }
+    
+    /* *{
+        color: blue;
+    }
+    #F{
+        color: red;
+    }
+     */
+     
