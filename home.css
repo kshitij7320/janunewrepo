@@ -1,0 +1,12 @@
+h1 {
+    color: red;
+    text-align: center;
+    text-weight: normal;
+}
+body {
+    background-image: url('123.jpg');
+}
+#navbar {
+    color: red;
+    text-align: flex: 1 1 auto;
+}
