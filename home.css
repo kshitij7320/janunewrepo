@@ -18,3 +18,21 @@ body {
     margin: 20px;
     display: flex-row;
 }
+.copyright {
+    display: flex-between;
+    color: blue;
+    padding: 40px;
+    margin: 40px 40px 40px 40px;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+p{
+    text-align: center;
+    padding: 40px 40px 40px 40px;
+}
+footer {
+    text-align: center;
+    padding: 40px 40px 40px 40px;
+}
