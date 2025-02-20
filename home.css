@@ -1,12 +1,20 @@
 h1 {
     color: red;
     text-align: center;
-    text-weight: normal;
+    text-weight: 100px;
 }
 body {
-    background-image: url('123.jpg');
+    /* background-image: url('123.jpg'); */
 }
 #navbar {
     color: red;
-    text-align: flex: 1 1 auto;
+    text-align: center;
+    display: flex;
+    padding: 50px;
+}
+.details {
+    text-align: left;
+    padding: 20px;
+    margin: 20px;
+    display: flex-row;
 }
