@@ -11,6 +11,11 @@ body {
     text-align: center;
     display: flex;
     padding: 50px;
+    cursor: pointer;
+    
+}
+navbar;:hover{
+    color: green;
 }
 .details {
     text-align: left;
@@ -35,4 +40,8 @@ p{
 footer {
     text-align: center;
     padding: 40px 40px 40px 40px;
+}
+button{
+    color: red;
+    background-color: pink;
 }
