@@ -24,11 +24,11 @@ navbar;:hover{
     display: flex-row;
 }
 .copyright {
-    display: flex-between;
     color: blue;
-    padding: 40px;
-    margin: 40px 40px 40px 40px;
-    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    text-align: left;
+    display: flex;
 }
 h2 {
     text-align: center;
@@ -39,7 +39,7 @@ p{
 }
 footer {
     text-align: center;
-    padding: 40px 40px 40px 40px;
+    padding: 50px;
 }
 button{
     color: red;
