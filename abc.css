@@ -1,0 +1,16 @@
+
+        ul{
+            margin: 0px;
+            padding: 0px;
+            border: 1px solid red;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+        }
+        /* li{
+            margin: 0em;
+            padding: 0em;
+            border: 1px solid black;
+        } */
+
+    

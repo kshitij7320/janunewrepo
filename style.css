@@ -8,7 +8,9 @@
 button {
     color: rgb(255, 0, 0);
     background-color: #ffff00;
+    text-shadow: color(srgb red green blue);
 }
+
     
     /* *{
         color: blue;

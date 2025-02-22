@@ -4,17 +4,20 @@ h1 {
     text-weight: 100px;
 }
 body {
-    /* background-image: url('123.jpg'); */
+     /* background-image: url('123.jpg'); */
 }
-.navbar {
+.navbar{
     color: red;
-    text-align: center;
+    list-style-type: none;
     display: flex;
-    padding: 50px;
+    padding: 0px;
+    margin: 0px;
     cursor: pointer;
+    justify-content: flex-start;
+    justify-content: space-between;
     
 }
-navbar;:hover{
+navbar::hover{
     color: green;
 }
 .details {
@@ -24,10 +27,14 @@ navbar;:hover{
     display: flex-row;
 }
 .copyright {
-    color: blue;
-    padding: 20px;
-    margin: 20px;
-    flex-direction: row-around;
+    color: red;
+    padding: 10px;
+    margin: 10px;
+    list-style-type: none;
+    justify-content: space-between;
+    /* flex-direction: ; */
+    display: flex-start;
+    justify-content: space-between;
 }
 h2 {
     text-align: center;
@@ -43,4 +50,7 @@ footer {
 button{
     color: red;
     background-color: pink;
+}
+nav {
+    text-align: center;
 }
