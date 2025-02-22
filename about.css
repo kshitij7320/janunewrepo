@@ -1,0 +1,10 @@
+body {
+    background-image: url('123.jpg');
+    color: rgb(2, 2, 23);
+    text-align: center;
+    width: 850px;
+    h1 {
+        color: rgb(2, 2, 23);
+        text-align: center;
+    }
+}
