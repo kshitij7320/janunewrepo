@@ -1,0 +1,8 @@
+body {
+    background-image: url(123.jpg);
+    color: rgb(241, 148, 8);
+    text-align: center;
+}
+button {
+    background-color: orange;
+}
