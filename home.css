@@ -4,7 +4,8 @@ h1 {
     text-weight: 100px;
 }
 body {
-     /* background-image: url('123.jpg'); */
+      background-image: url('123.jpg');
+      color: rgb(241, 148, 8);
 }
 .navbar{
     color: red;
@@ -46,6 +47,7 @@ p{
 footer {
     text-align: center;
     padding: 50px;
+    list-style-type: none;
 }
 button{
     color: red;
@@ -53,4 +55,9 @@ button{
 }
 nav {
     text-align: center;
+}
+a {
+    text-decoration: none;
+    text-emphasis: none;
+    color: red;
 }
