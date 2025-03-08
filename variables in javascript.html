@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input">
+    <button id="button">submit</button>
+    <p id="para">this is a paragraph</p>
+    <script>
+        document.getElementById("button").onclick = function() {
+            var val="";
+            val = document.getElementById("input").value;
+            console.log(val);
+            document.getElementById("para").innerHTML = val;
+        }
+    </script>
+</body>
+</html>
