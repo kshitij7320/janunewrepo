@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            float: left;
+            margin-right: 50px;
+            
+        }
+        #red {
+            background-color: red;
+        }
+        #blue {
+            background-color: blue;
+        }
+        #green {
+            background-color: green;
+        }
+
+       .circle:hover {
+    </style>
+</head>
+<body>
+    <!-- <p id="text">hello world</p>
+    <button id="change">change text</button>
+     <script>
+        // document.getElementById("text").innerHTML = "hello";
+        // document.getElementById("change").onclick = function() {
+        //     // document.getElementById("text").innerHTML = "i think " + document.getElementById("text").innerHTML+" awesome";
+        // document.getElementById("change").onclick = function() {
+        //         document.getElementById("text").innerHTML = "<h1>i think </h1>";
+                document.getElementById("change").onclick = function() {
+                    document.getElementById("text").style.display = "none";
+        }
+     </script> -->
+     <div class="circle" id="red"></div>
+     <div class="circle" id="blue"></div>
+     <div class="circle" id="green"></div>
+     <script>
+     document.getElementById("red").onclick = function() {
+      document.getElementById("red").style.display = "none";
+    }   
+    document.getElementById("blue").onclick = function() {
+        document.getElementById("blue").style.display = "none";
+    }
+    document.getElementById("green").onclick = function() {
+        document.getElementById("green").style.display = "none";
+    }
+     </script>
+</body>
+</html>
