@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="text">
+    <button id="button">CLICK</button>
+    <script>
+            var username = 0;
+             document.getElementById("button").onclick = function(){
+               username=document.getElementById("text").value
+            //    alert(username);
+            var answer = Math.floor(Math.random() * 10) + 1;
+            if(username == answer){
+                alert("Congratulations! Your guess is correct.");
+            }
+            else{
+                alert("Sorry, your guess is incorrect. The correct answer is: " + answer);
+            }
+             }
+    </script>
+</body>
+</html>
