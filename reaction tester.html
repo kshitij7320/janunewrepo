@@ -20,6 +20,14 @@
     
     <script>
         var start = new Date().getTime();
+        function getRandomColor(){
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
 
         function move() {
             var left = Math.random() * 300;
@@ -33,6 +41,8 @@
             shape.style.width = wh + "px";
             shape.style.height = wh + "px";
             shape.style.display = "block";
+
+            document.getElementById("shape").style.backgroundColor = getRandomColor()
 
             start = new Date().getTime();
         }
