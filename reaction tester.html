@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reaction Tester</title>
+    <style>
+        #shape {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: absolute; /* Changed from relative to absolute */
+        }
+    </style>
+</head>
+<body>
+    <h1>Reaction Tester</h1>
+    <p>Click on the boxes as soon as you can</p>
+    <div id="shape"></div>
+    
+    <script>
+        var start = new Date().getTime();
+
+        function move() {
+            var left = Math.random() * 300;
+            var top = Math.random() * 300;
+            var wh = (Math.random() * 200) + 50; // Adjusted size range for better playability
+
+            var shape = document.getElementById("shape");
+
+            shape.style.left = left + "px";
+            shape.style.top = top + "px";
+            shape.style.width = wh + "px";
+            shape.style.height = wh + "px";
+            shape.style.display = "block";
+
+            start = new Date().getTime();
+        }
+
+        document.getElementById("shape").onclick = function () {
+            document.getElementById("shape").style.display = "none";
+
+            var end = new Date().getTime();
+            var timetaken = (end - start) / 1000;
+
+            alert("Reaction time: " + timetaken + " seconds");
+            setTimeout(move, Math.random() * 2000); // Adds a delay before showing the next shape
+        };
+
+        move(); // Call move to start the game
+    </script>
+</body>
+</html>
