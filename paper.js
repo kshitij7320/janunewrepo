@@ -1,8 +1,11 @@
-let userScore =0;
+let userScore = 0;
 let compScore = 0;
 
 const choices = document.querySelectorAll(".choice");
 const msg = document.querySelector("#msg");
+const userScoreDisplay = document.querySelector("#user-score");
+const compScoreDisplay = document.querySelector("#comp-score");
+
 const genCompChoice = () => {
     const options = ["rock", "paper", "scissors"];
     const randIdx = Math.floor(Math.random() * 3);
@@ -10,43 +13,43 @@ const genCompChoice = () => {
 }
 
 const drawGame = () => {
-    console.log("It's a tie!");
     msg.innerText = "It's a tie!";
 }
 
 const showWinner = (userWin) => {
     if (userWin) {
-        console.log("User wins!");
-        msg.innerText = "you win";
+        msg.innerText = "You win!";
+        userScore++;
     } else {
-        console.log("Computer wins!");
-        msg.innerText = "computer wins";
+        msg.innerText = "Computer wins!";
+        compScore++;
     }
+    // Update the score display
+    userScoreDisplay.innerText = userScore;
+    compScoreDisplay.innerText = compScore;
 }
 
 const playGame = (userChoice) => {
-    console.log(userChoice);
     const compChoice = genCompChoice();
-    console.log(compChoice);
 
-    if(userChoice === compChoice) {
+    if (userChoice === compChoice) {
         drawGame();
     } else {
         let userWin = true;
-        if(userChoice === "rock") {
+        if (userChoice === "rock") {
             userWin = compChoice === "paper" ? false : true;
-    } else if(userChoice === "paper") {
-           userWin = compChoice === "scissors" ? false : true;
-    } else {
-        userWin = compChoice === "rock" ? false : true;
+        } else if (userChoice === "paper") {
+            userWin = compChoice === "scissors" ? false : true;
+        } else {
+            userWin = compChoice === "rock" ? false : true;
+        }
+        showWinner(userWin);
     }
-    showWinner(userWin);
 }
 
 choices.forEach((choice) => {
-    choice.addEventListener("click",() => {
+    choice.addEventListener("click", () => {
         const userChoice = choice.getAttribute("id");
         playGame(userChoice);
-
-})
-})
+    });
+});
