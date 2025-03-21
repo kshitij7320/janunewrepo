@@ -14,14 +14,17 @@ const genCompChoice = () => {
 
 const drawGame = () => {
     msg.innerText = "It's a tie!";
+    msg.style.backgroundColor = "yellow";
 }
 
 const showWinner = (userWin) => {
     if (userWin) {
         msg.innerText = "You win!";
+        msg.style.backgroundColor = "green";
         userScore++;
     } else {
         msg.innerText = "Computer wins!";
+        msg.style.backgroundColor = "red";
         compScore++;
     }
     // Update the score display
