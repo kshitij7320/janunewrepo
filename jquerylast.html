@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="jquery-ui-1.14.1/jquery-ui.js"></script>
+    <link href="jquery-ui-1.14.1/jquery-ui.css">
+    <script>
+        $( function() {
+          $( "#accordion" ).accordion();
+        } );
+        </script>
+        <script>
+            $( function() {
+              $( "#datepicker" ).datepicker();
+            } );
+            </script>
+</head>
+<body>
+    <div id="accordion">
+        <h3>Section 1</h3>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam nonummy nibh euismod tincidunt. Curabitur aliquet quam eget massa.</p>
+        </div>
+        <h3>Section 2</h3>
+        <div>
+            <p>Ut wisi enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <h3>Section 3</h3>
+        <div>
+            <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum.</p>
+        </div>
+    </div>
+    <p>DATE <input type="text" id="datepicker"</p>
+</body>
+</html>
