@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOTSTRAP LANDING PAGE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .jumbotron {
+            background-image: url(123.jpg);
+            text-align: center;
+            margin-top: 50px;
+            color: red !important;
+        }
+        .navbar  {
+            background-color: rgb(125, 125, 219) !important;
+        }
+        #cont {
+            text-align: center;
+
+        }
+        #footer {
+            text-align: center;
+            background-color: beige;
+        }
+        
+    </style>
+</head>
+<body data-spy="scroll" data-target="#navbar" data-offset="150">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">KSHITIJ BAR </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ABOUT US</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  ACCOUNT SETTINGS
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">PROFILE</a></li>
+                  <li><a class="dropdown-item" href="#">ACCOUNT PRIVACY</a></li>
+                  <li><a class="dropdown-item" href="#">ORDER</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">ACCOUNT VERIFICATION</a></li>
+                  <li><a class="dropdown-item" href="#">DETAILS</a></li>
+                  <li><a class="dropdown-item" href="#">LOGOUT</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">DOWNLOAD MY APP</a>
+              </li>
+            </ul>
+            <nav class="navbar bg-body-tertiary">
+                <form class="container-fluid">
+                  <div class="input-group">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input type="email" class="form-control" placeholder="email" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                </form>
+              </nav>
+              <nav class="navbar bg-body-tertiary">
+                <form class="container-fluid">
+                  <div class="input-group">
+                    <span class="input-group-text" id="basic-addon1">Pass</span>
+                    <input type="password" class="form-control" placeholder="password" aria-label="password" aria-describedby="basic-addon1">
+                  </div>
+                </form>
+              </nav>
+              <button class="btn btn-outline-success" type="submit">LOGIN</button>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="jumbotron">
+        <h1 class="display-4">Welcome to KSHITIJ BAR</h1>
+        <p class="lead">Hello Visitors This Message is Directly From The Director of The Kshitij BARS And We Are Very Thankful That You Have Choosen Us to Deliver You The Serving Service.</p>
+        <hr class="my-4">
+        <p>Visit our <a href="#">MENU</a> or <a href="#">OFFERS</a> page.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      </div>
+      <div class="container" id="cont">
+        <h1>
+            Why This App Is Awesome
+        </h1>
+        <h6>
+            This App Is Awesome To Use
+        </h6>
+
+      </div>
+      <div class="card-group">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="container" id="footer">
+        <h3>DOWNLOAD THE APP</h3>
+        <p>Download Our App To Get The Latest Deals And Special Offers.</p>
+        <p><a href=""><img src=""></a></p>
+      </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
